@@ -4,11 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 
 import com.udemy.springitem.model.Item;
 import com.udemy.springitem.repo.ItemRepository;
 
 @SpringBootApplication
+@EnableCaching
 public class SpringitemApplication implements CommandLineRunner{
 
 	@Autowired
